@@ -71,7 +71,17 @@ Stage One:
     I've read over them many times now, there are some very specific requirements that target what we learned this week. First step variables, I think we'll mostly use strings and then split to arrays and booleans for prompts. Use .length and math.random, they probably want us to use toUpperCase instead of creating two strings of uper and lower to display we know how. I don't believe we need to make changes to the html or css to make it properly function but time will tell. I may have over looked validation, good thing I just read it again, should be if false false false reprompt I think.
 
 Stage Two:
+
     Creating variables and prompts. 
+    I'm not sure if I actually need the booleans for the prompts, I think I got over zealous with the vars. I'll change them multiple times fret not.
+    I'm now opting to make a new array of Y and N instead of doing booleans after looking back at how I did this in the class activity of rock paper scissors. however, I'm pretty sure booleans could have worked just fine.
+    After writing the prompts, I wanted to test them.
+
+![First Test](assets/images/test1.jpg)
+
+    Which on the js line 72 is the generatePassword function which doesn't exist yet. Will try commenting it out.
+    Commenting out removed the error, but I didn't have an eventListener to start the functions haha. Easy fix and the prompts work!
+
 
     
 
