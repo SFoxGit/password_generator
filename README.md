@@ -31,17 +31,48 @@ Shawn Fox
 ---
 ## Description
 
+Password generator using javascript that can create different levels of security based on user preference. 
 
 ---
 ## Requirements
+
+    GIVEN I need a new, secure password
+    WHEN I click the button to generate a password
+    THEN I am presented with a series of prompts for password criteria
+    WHEN prompted for password criteria
+    THEN I select which criteria to include in the password
+    WHEN prompted for the length of the password
+    THEN I choose a length of at least 8 characters and no more than 128 characters
+    WHEN prompted for character types to include in the password
+    THEN I choose lowercase, uppercase, numeric, and/or special characters
+    WHEN I answer each prompt
+    THEN my input should be validated and at least one character type should be selected
+    WHEN all prompts are answered
+    THEN a password is generated that matches the selected criteria
+    WHEN the password is generated
+    THEN the password is either displayed in an alert or written to the page
 
 
 ---
 ### Must include:
 
+    Application user experience is intuitive and easy to navigate.
+    Application user interface style is clean and polished.
+    Application resembles the mock-up functionality provided in the homework instructions.
     
+![Mock-up](assets/images/mockup.png)
+
 ---
 ## Progress
+
+Stage One: 
+
+    Understanding the instructions. 
+    I've read over them many times now, there are some very specific requirements that target what we learned this week. First step variables, I think we'll mostly use strings and then split to arrays and booleans for prompts. Use .length and math.random, they probably want us to use toUpperCase instead of creating two strings of uper and lower to display we know how. I don't believe we need to make changes to the html or css to make it properly function but time will tell. I may have over looked validation, good thing I just read it again, should be if false false false reprompt I think.
+
+Stage Two:
+    Creating variables and prompts. 
+
     
 
 ---
