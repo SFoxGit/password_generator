@@ -67,12 +67,14 @@ Password generator using javascript that can create different levels of security
 
 Stage One: 
 
-    Understanding the instructions. 
+*Understanding the instructions.* 
+
     I've read over them many times now, there are some very specific requirements that target what we learned this week. First step variables, I think we'll mostly use strings and then split to arrays and booleans for prompts. Use .length and math.random, they probably want us to use toUpperCase instead of creating two strings of uper and lower to display we know how. I don't believe we need to make changes to the html or css to make it properly function but time will tell. I may have over looked validation, good thing I just read it again, should be if false false false reprompt I think.
 
 Stage Two:
 
-    Creating variables and prompts. 
+*Creating variables and prompts.* 
+
     I'm not sure if I actually need the booleans for the prompts, I think I got over zealous with the vars. I'll change them multiple times fret not.
     I'm now opting to make a new array of Y and N instead of doing booleans after looking back at how I did this in the class activity of rock paper scissors. however, I'm pretty sure booleans could have worked just fine.
     After writing the prompts, I wanted to test them.
@@ -81,6 +83,22 @@ Stage Two:
 
     Which on the js line 72 is the generatePassword function which doesn't exist yet. Will try commenting it out.
     Commenting out removed the error, but I didn't have an eventListener to start the functions haha. Easy fix and the prompts work!
+
+Stage Three:
+
+*Validation and generation*
+
+    At this point our length should be between 8 and 128, and all 4 character types should be Y or N. Now we need to validate that all 4 are not N. Create our array by spliting the current strings and combining them into one large array for the gen to pull from, and not forget that we need to create the var upperCase from the lowerCase with toUpperCase!
+
+    Validation test was a success! Just a simple if && for N in each character. This is where it gets difficult. First we need to create the new array based on the prompts. Tested with a simple console.log(passwordTable)
+
+![Second Table](assets/images/test2.jpg)
+
+    This is going too smoothly. Onward to generation! My thought is we can just math.random loop it for the lengthP (length prompt) but if we had 8 length and all prompts selected each char has a 10/91 chance of being a number, which is lowested odds, but if we miss 8 times the password has no number. 
+
+    I was going to split the string into an array and then return it to a string, then I remembered charAt is a thing. Had a heck of a time with the generatePassword function, countless small errors. I now need to reset it back to blank after process completes because it just keeps adding to the previous generated password currently. Easy fix, moved password = "" to the start of the very first function. Functionality is complete. This could be condensed down into far fewer functions but this is very easy to read like this, so better educationally I think.
+
+
 
 
     
