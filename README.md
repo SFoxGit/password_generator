@@ -12,8 +12,8 @@ Shawn Fox
 ---
 ## Project Links:
 
-- Deployed site: [GitHub Pages]()
-- GitHub: [SFoxGit]()
+- Deployed site: [GitHub Pages](https://sfoxgit.github.io/password_generator/)
+- GitHub: [SFoxGit](https://github.com/SFoxGit/password_generator)
 
 ---
 ## Table of Contents
