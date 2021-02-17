@@ -98,6 +98,13 @@ Stage Three:
 
     I was going to split the string into an array and then return it to a string, then I remembered charAt is a thing. Had a heck of a time with the generatePassword function, countless small errors. I now need to reset it back to blank after process completes because it just keeps adding to the previous generated password currently. Easy fix, moved password = "" to the start of the very first function. Functionality is complete. This could be condensed down into far fewer functions but this is very easy to read like this, so better educationally I think.
 
+Stage four:
+
+*Going back over*
+
+    I believe I do have to validate that all char types are being used. Back into the javascript to do that. I think splitting the string into an array for not only the password but also the character types as well, then doing a comparison *should* do the trick. 
+
+    Many hours later, I created infinite loops that broke password table. I think the fix is changing to do whiles then having it change the while condition var. Unfortunately I am out of time but I am so close. I'm going to leave the progress commented out and come back to it.
 
 
 
@@ -110,4 +117,5 @@ Stage Three:
 ---
 ## Credits
 
+Original code provided by: UNC Charlotte BootcampSpot
 
